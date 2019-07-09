@@ -1,5 +1,6 @@
 <%= form_for @recipe do |f| %>
-  Title: <%= f.text_field :title %>
+  Title: <%= f.text_field :name %>
+  Title: <%= f.text_field :name %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
 
@@ -22,6 +23,6 @@
     <%= addr.label :address_type %>
     <%= addr.text_field :address_type %><br>
   <% end %>
- 
+
   <%= f.submit %>
 <% end %>
